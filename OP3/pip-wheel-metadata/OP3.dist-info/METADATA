@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: OP3
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/_/OP3
+Author: Jasmijn Wellner
+Author-email: gyvox.public@gmail.com
+Maintainer: Jasmijn Wellner
+Maintainer-email: gyvox.public@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+
+OP3
+===
+
+-----
+
+.. contents:: **Table of Contents**
+    :backlinks: none
+
+Installation
+------------
+
+OP3 is distributed on `PyPI <https://pypi.org>`_ as a universal
+wheel and is available on Linux/macOS and Windows and supports
+Python 2.7/3.5+ and PyPy.
+
+.. code-block:: bash
+
+    $ pip install OP3
+
+License
+-------
+
+OP3 is distributed under the terms of the
+`MIT License <https://choosealicense.com/licenses/mit>`_.
+
+
