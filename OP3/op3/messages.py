@@ -1,8 +1,7 @@
-from datetime import datetime
-from typing import NamedTuple, Any, Optional, Iterator
-
 from abc import ABC, abstractmethod
 from collections.abc import MutableSequence
+from datetime import datetime
+from typing import NamedTuple, Any, Optional, Iterator
 
 from .encoders import ENCODERS, string_encode, default_encoder, datetime_encode, blob_encode
 
@@ -41,7 +40,7 @@ class AbstractMessage(ABC, MutableSequence):
 
     @abstractmethod
     def _build_message(self) -> Iterator[bytes]:
-        assert NotImplementedError # pragma: no cover
+        assert NotImplementedError # no coverage: abstract method
 
     def __bytes__(self):
         return b''.join(self._build_message())

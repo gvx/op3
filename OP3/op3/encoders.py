@@ -19,12 +19,12 @@ twoints = Struct('>II')
 fourints = Struct('>4i')
 
 def _nul_pad(s: bytes) -> bytes:
-    return s + b'\0' * (4 - len(s) % 4)
+    return s + b'\0' * (len(s) % 4)
 
 def string_encode(s: str) -> bytes:
     if '\0' in s:
         raise ValueError('OSC-strings cannot contain NUL characters')
-    return _nul_pad(s.encode('ascii'))
+    return _nul_pad(s.encode('ascii') + b'\0')
 
 def blob_encode(b: bytes) -> bytes:
     return int32.pack(len(b)) + _nul_pad(b)
